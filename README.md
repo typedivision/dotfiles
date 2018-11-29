@@ -1,4 +1,4 @@
-# dotfiles
+![dotfiles](dotfiles.png)
 
 1. bash and terminal [color theme](https://github.com/typedivision/division)
 ```
