@@ -1,0 +1,9 @@
+[alias]
+    lgr = log --graph --decorate --pretty=oneline --abbrev-commit
+    lga = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[diff]
+    tool = default-difftool
+
+[difftool "default-difftool"]
+    cmd = vim -i NONE -f '+next' '+execute \"DirDiff\" argv(0) argv(1)' $LOCAL $REMOTE '+syntax off'
