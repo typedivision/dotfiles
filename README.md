@@ -34,9 +34,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # get config
 cp .tmux.conf ~
-cp --parents .tmux/plugins/base16-tmux/tmuxcolors-division.conf ~
 
 # then start tmux and install plugins by <ctrl> a + I
+# and get color theme
+cp --parents .tmux/plugins/base16-tmux/tmuxcolors-division.conf ~
 ```
 
 ### 5. neovim and [plugins](https://github.com/junegunn/vim-plug)
