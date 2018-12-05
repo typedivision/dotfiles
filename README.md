@@ -2,7 +2,13 @@
 
 ## What's in it for me?
 
-### 1. bash and terminal [color theme](https://github.com/typedivision/division)
+### 1. [homebrew](https://brew.sh) or [linuxbrew](http://linuxbrew.sh)
+```
+# install the homebrew, then get your favourite tools
+brew install zsh zsh-completions neovim tmux
+```
+
+### 2. bash and terminal [color theme](https://github.com/typedivision/division)
 ```
 # get base16-shell scripts
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
@@ -15,11 +21,7 @@ cat .bashrc >> ~/.bashrc
 base16_division
 ```
 
-### 2. [linuxbrew](http://linuxbrew.sh)
-```
-# install linuxbrew, then get your favourite tools
-brew install zsh zsh-completions neovim tmux
-```
+.o( for `cp --parents` in macOS, you need to `brew coreutils` and then there is `gcp`)
 
 ### 3. zsh with [prezto](https://github.com/sorin-ionescu/prezto)
 ```
@@ -60,9 +62,9 @@ cp --parents .config/nvim/init.vim ~
 cp --parents .local/share/nvim/plugged/base16-vim/colors/base16-division.vim ~
 ```
 
-### updates
+### Updates
 ```
-# linuxbrew
+# homebrew
 brew update
 brew upgrade
 
