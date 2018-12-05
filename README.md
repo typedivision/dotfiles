@@ -1,5 +1,7 @@
 ![dotfiles](dotfiles.png)
 
+## What's in it for me?
+
 ### 1. bash and terminal [color theme](https://github.com/typedivision/division)
 ```
 # get base16-shell scripts
