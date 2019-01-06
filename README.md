@@ -5,7 +5,7 @@
 ### 1. [homebrew](https://brew.sh) or [linuxbrew](http://linuxbrew.sh)
 ```
 # install the homebrew, then get your favourite tools
-brew install zsh zsh-completions neovim tmux
+brew install zsh neovim tmux
 ```
 
 ### 2. bash and terminal [color theme](https://github.com/typedivision/division)

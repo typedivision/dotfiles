@@ -12,10 +12,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 "Plug 'Valloric/YouCompleteMe'
-"Plug 'embear/vim-localvimrc'
 
 Plug 'tpope/vim-fugitive'
-Plug 'gregsexton/gitv'
 Plug 'will133/vim-dirdiff'
 
 call plug#end()
@@ -55,9 +53,6 @@ let NERDTreeAutoDeleteBuffer=1
 
 "" nerdtree style
 let NERDTreeMinimalUI=1
-
-"" gitv close all
-let g:Gitv_WipeAllOnClose=0
 
 "" YouCompleteMe settings
 let g:ycm_auto_trigger=0
