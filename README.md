@@ -5,7 +5,10 @@
 ### 1. [homebrew](https://brew.sh) or [linuxbrew](http://linuxbrew.sh)
 ```
 # install the homebrew, then get your favourite tools
-brew install zsh neovim tmux
+brew install zsh neovim tmux mc ranger fd fzf the_silver_searcher highlight vimpager
+
+# for fzf integration
+$(brew --prefix fzf)/install
 ```
 
 ### 2. bash and terminal [color theme](https://github.com/typedivision/division)

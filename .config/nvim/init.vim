@@ -99,6 +99,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:cpp_class_decl_highlight = 1
 
+hi SpellBad ctermfg=red
+
 "*****************************************************************************
 "" Abbreviations
 "*****************************************************************************
@@ -151,6 +153,14 @@ function! YcmToggle()
   endif
 endfunction
 
+"" Ruler
+nnoremap <leader>r :let &cc = &cc == '' ? '100' : ''<CR>
+
+"" Spell check
+nnoremap <leader>s :set invspell<CR>
+nnoremap <leader>S :set spell<bar>:set spelllang=de_de<CR>
+
+"" Quickfix
 noremap <leader>f :call QuickfixToggle()<cr>
 
 let g:quickfix_is_open = 0
