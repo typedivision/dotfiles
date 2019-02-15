@@ -1,5 +1,5 @@
---- /home/linuxbrew/.linuxbrew/Cellar/ranger/1.9.2/libexec/ranger/data/scope.sh	2018-09-09 21:51:55.000000000 +0200
-+++ /home/sk/.config/ranger/scope.sh	2019-01-30 10:05:16.476405165 +0100
+--- a/libexec/ranger/data/scope.sh	2018-09-09 21:51:55.000000000 +0200
++++ b/libexec/ranger/data/scope.sh	2019-01-30 10:05:16.476405165 +0100
 @@ -35,8 +35,8 @@
  
  # Settings

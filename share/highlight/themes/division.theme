@@ -35,12 +35,12 @@ StringPreProc  = Escape
 
 Interpolation  = { Colour = base09, Italic = false, Bold = false }
 
-LineComment    = { Colour = base03, Italic = true,  Bold = false }
+LineComment    = { Colour = base03, Italic = false,  Bold = false }
 BlockComment   = LineComment
 
 LineNum        = { Colour = base03, Italic = false, Bold = false }
 
-PreProcessor   = { Colour = base0E, Italic = false, Bold = false }
+PreProcessor   = { Colour = base0C, Italic = false, Bold = false }
 
 Keywords = {
   { Colour = base0E, Italic = false, Bold = false  }, --> kwd 1

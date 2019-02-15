@@ -92,12 +92,14 @@ if filereadable(expand("~/.vimrc_background"))
   augroup END
 endif
 
+let g:cpp_class_decl_highlight = 1
+
 let g:airline_powerline_fonts = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-let g:cpp_class_decl_highlight = 1
+let &cc = '100'
 
 hi SpellBad ctermfg=red
 

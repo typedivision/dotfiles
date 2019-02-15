@@ -5,5 +5,3 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 if [ "$COLORTERM" = "mate-terminal" ]; then
   TERM=xterm-256color
 fi
-
-PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
