@@ -40,7 +40,11 @@ set hidden
 set ignorecase
 set smartcase
 
+"" Autowrite before builds
 set autowrite
+
+"" Confirm write on quit
+set confirm
 
 ":set mouse=a
 
@@ -110,18 +114,19 @@ hi SpellBad ctermfg=red
 "" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
 cnoreabbrev Wq wq
 cnoreabbrev Wa wa
 cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
-cnoreabbrev Qall qall
 
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
+
+"" Fast closing
+noremap <leader><leader> :q<cr>
 
 "" Buffer nav
 noremap <A-n> :bn<cr>
@@ -134,6 +139,7 @@ noremap <leader>Q :BD!<cr>
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
 
+"" Build
 map <f5> :make
 
 "" Switching windows
