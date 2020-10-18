@@ -5,7 +5,7 @@
 ### 1. [homebrew](https://brew.sh) or [linuxbrew](http://linuxbrew.sh)
 ```
 # install the homebrew, then get your favourite tools
-brew install zsh neovim tmux mc ranger fd fzf the_silver_searcher highlight vimpager
+brew install zsh neovim tmux ranger tig fd the_silver_searcher
 ```
 
 ### 2. bash and terminal [color theme](https://github.com/typedivision/division)
@@ -15,13 +15,15 @@ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shel
 
 # get config
 cp --parents .config/base16-shell/scripts/base16-division.sh ~
+
+# bash config (zsh follows next)
 cat .bashrc >> ~/.bashrc
 
-# restart bash and set color theme
+# restart bash and set color theme (or wait for zsh setup)
 base16_division
 ```
 
-.o( for `cp --parents` in macOS, you need to `brew coreutils` and then there is `gcp`)
+.o( for `cp --parents` in macOS, you need to `brew install coreutils` and then there is `gcp`)
 
 ### 3. zsh with [prezto](https://github.com/sorin-ionescu/prezto)
 ```
@@ -31,7 +33,8 @@ cp --parents .zprezto/modules/completion/init.zsh ~
 cp --parents .zprezto/modules/prompt/functions/prompt_damoekri_setup ~
 ```
 
-.o( here as well: add coreutils (sed, dircolors, etc.) and prefix g in .zshrc for macOS )
+.o( here as well: add coreutils and gnu-sed and prefix g (gsed, gdircolors) in .zshrc for macOS )  
+.o( with zprezto, gcp is a git alias, uncomment git "Disable aliases" line in .zpreztorc to fix )
 
 ### 4. tmux and [plugins](https://github.com/tmux-plugins/tpm)
 ```
@@ -60,19 +63,13 @@ mkdir ~/.config/nvim
 cp --parents .config/nvim/init.vim ~
 
 # then start nvim, ignore errors and install plugins by :PlugInstall
-# and get color theme
+# then get color theme
 cp --parents .local/share/nvim/plugged/base16-vim/colors/base16-division.vim ~
 ```
 
 ### Others
 ```
-cp --parents share/highlight/themes/division.theme $(brew --prefix)
-
 cp --parents .config/ranger/rc.conf ~
-patch -Np1 -d $(brew --prefix ranger) -o ~/.config/ranger/scope.sh < .config/ranger/scope.sh.patch
-chmod +x ~/.config/ranger/scope.sh
-
-$(brew --prefix fzf)/install
 ```
 
 ### Updates
