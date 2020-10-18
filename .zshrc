@@ -26,6 +26,9 @@ alias agx='ag --color-line-number "30;1" --color-path "34;1" --color-match "32;1
 alias agt='ag --color-line-number "30;1" --color-path "34;1" --color-match "32;1" --hidden --silent -t'
 alias fdx='fd --follow --hidden --no-ignore --exclude ".git"'
 
+alias vi=nvim
+alias vim=nvim
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
