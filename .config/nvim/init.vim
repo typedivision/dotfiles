@@ -120,6 +120,7 @@ cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
+cnoreabbrev X x
 
 "*****************************************************************************
 "" Mappings
@@ -163,6 +164,19 @@ endfunction
 
 "" Ruler
 nnoremap <leader>r :let &cc = &cc == '' ? '100' : ''<CR>
+
+"" Indentation
+nnoremap <leader>i :call IndentToggle()<cr>
+
+function! IndentToggle()
+  if &expandtab
+    set expandtab!
+    set shiftwidth=2
+  else
+    set expandtab
+    set shiftwidth=4
+  endif
+endfunction
 
 "" Spell check
 nnoremap <leader>s :set invspell<CR>
