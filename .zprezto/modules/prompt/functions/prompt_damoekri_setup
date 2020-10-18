@@ -39,7 +39,7 @@ function prompt_damoekri_setup {
   zstyle ':prezto:module:prompt' managed 'yes'
 
   # Set editor-info parameters.
-  zstyle ':prezto:module:editor:info:keymap:primary' format ' %F{green}>%f'
+  zstyle ':prezto:module:editor:info:keymap:primary' format ' %(?.%F{green}.%F{yellow})>%f'
 
   # Set git-info parameters.
   zstyle ':prezto:module:git:info' verbose 'yes'
